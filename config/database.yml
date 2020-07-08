@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: 127.0.0.1
+
+development:
+  <<: *default
+  database: rails_example_development
+
+test:
+  <<: *default
+  database: rails_example_test
